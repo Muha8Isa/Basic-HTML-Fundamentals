@@ -1,0 +1,11 @@
+body {
+  margin: 1;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+body{
+  background-image: url("../Image/wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
