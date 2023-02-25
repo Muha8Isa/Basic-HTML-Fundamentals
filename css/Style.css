@@ -29,10 +29,35 @@ body {
   padding: 20px;
 }
 
+input[type="submit"] {
+  background-color: #99641a;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #f6e263;
+  padding: 10px 10px;
+}
+
+
+input[type="username"] {
+  border-radius: 1px;
+  font-size: 12px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+input[type="password"] {
+  border-radius: 1px;
+  font-size: 12px;
+  padding: 10px 10px;
+  margin-left: 3px;
+}
+
 .nav {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   background-color: #f9ead01f;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -40,14 +65,23 @@ body {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   background-color: #f5b3391f;
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
+  #goals {
+    font-weight: lighter;
+    color: blue;
+  }
+  
 .main {
   grid-column: 1 / 2;
-  grid-row: 2 / 2;
+  grid-row: 2 / 3;
   background-color: #eeeeee00;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -58,6 +92,28 @@ body {
   padding: 20px;
   text-align: center;
 }
+
+  /* Alternating list items */
+.nav ul li:nth-child(odd) {
+    background-color: green;
+}
+
+.nav ul li:nth-child(even) {
+    background-color: red;
+}
+
+ a { /*Change all links colors*/
+  color: rgb(254, 254, 254);
+}
+
+/*a:nth-child(odd) {
+  color: green;
+}
+
+a:nth-child(even) {
+  color: red;
+} */
+
 
 .footer {
   grid-column: 1 / 4;

@@ -12,12 +12,20 @@
             <h1>KuSaRiGaMa.8</h1>
         </div>
         <div class="login"> <!-- login box -->
-            <iframe src="./Login.html" frameborder="0" width="100%" height="100%"></iframe>
+           <!--<iframe src="./Login.html" frameborder="0" width="100%" height="100%"></iframe>--> 
+           <form>
+            <h2>Login Page</h2>
+            <label>Username:</label>
+            <input type="username" name="username"><br> <!-- The <br> tag creates a line break after the input field, which moves the cursor to the next line -->
+            <label> Password: </label>
+            <input type="password" name="password"><br>
+            <input type="submit" value="Sign In"> <!-- Creates a button that the user can click to submit the form -->
+          </form>
         </div>
         <div class="nav"> <!-- navigation box -->
             <ul>
-                <li style="margin-bottom: 10px"><a href="https://github.com/Muha8Isa" target="_blank">My Github profile</a></li>
-                <li style="margin-bottom: 10px"><a href="https://captainclaw.net/en/" target="_blank">My favourite side-scrolling video game</a></li>
+                <li><a href="https://github.com/Muha8Isa" target="_blank">My Github profile</a></li>
+                <li><a href="https://captainclaw.net/en/" target="_blank">My favourite side-scrolling video game</a></li>
                 <li><a href="https://www.youtube.com/watch?v=8Jtc1crCkPg" target="_blank">A great singer (Arabic classical poem)</a></li>
             </ul>
         </div>
@@ -38,7 +46,7 @@
             <h2>About Me</h2>
             <p>I am a junior developer </p>
             <article> <!-- Article is a self-contained piece of content that could exist independently from the rest of the content on the page -->
-              <h3>My goals</h3>
+              <h3 id="goals">My goals</h3>
               <p>I am eager to learn new skills in programming </p>
             </article>
             <article>
