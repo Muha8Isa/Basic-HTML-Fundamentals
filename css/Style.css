@@ -1,11 +1,69 @@
 body {
-  margin: 1;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-
-body{
+  width: 1024px;
+  margin: 0 auto; /* sets the top and bottom margins of an element to zero and the left and right margins to auto. This centers an element both horizontally and vertically within its container.*/
+  font-family:sans-serif;
   background-image: url("../Image/wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto 1fr auto;
+  gap: 10px;
+  height: 150vh;
+}
+
+.header {
+  grid-column: 1 / 4;
+  background-color:rgb(241, 217, 187);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.login {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  background-color: #a6774b45;
+  padding: 20px;
+}
+
+.nav {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background-color: #f9ead01f;
+  padding: 20px;
+}
+
+.about {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: #f5b3391f;
+  padding: 20px;
+}
+
+.main {
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+  background-color: #eeeeee00;
+  padding: 20px;
+  text-align: center;
+}
+
+.statistics {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-color: #eeeeee32;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 5;
+  background-color: #e8c3a8;
+  padding: 20px;
+  text-align: center;
 }
 
